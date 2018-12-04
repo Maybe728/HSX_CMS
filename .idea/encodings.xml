@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/tyqx-cms" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tyqx-cms/api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tyqx-cms/consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tyqx-cms/provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tyqx-cms/tools" charset="UTF-8" />
+  </component>
+</project>
