@@ -50,7 +50,7 @@ layui.use(['form','layer','table'],function(){
         layui.layer.open({
             title : title,
             type : 2,
-            area : ["550px","700px"],
+            area : ["550px","570px"],
             content : "info.html",
             success : function(layero, index){
                 var body = layui.layer.getChildFrame('body', index);
@@ -63,10 +63,10 @@ layui.use(['form','layer','table'],function(){
                     form.render();
                 }
                 setTimeout(function(){
-                    layui.layer.tips('点击此处返回角色列表', '.layui-layer-setwin .layui-layer-close', {
+                    layui.layer.tips('点击此处返回角色列表111', '.layui-layer-setwin .layui-layer-close', {
                         tips: 3
                     });
-                },500)
+                },300)
             }
         })
     }

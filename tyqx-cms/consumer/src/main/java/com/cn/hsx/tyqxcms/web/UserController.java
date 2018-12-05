@@ -3,6 +3,7 @@ package com.cn.hsx.tyqxcms.web;
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.baomidou.mybatisplus.plugins.Page;
+import com.cn.hsx.tyqxcms.annotation.SysLog;
 import com.cn.hsx.tyqxcms.dto.ResultInfo;
 import com.cn.hsx.tyqxcms.dto.UserInfo;
 import com.cn.hsx.tyqxcms.entity.User;
@@ -68,6 +69,7 @@ public class UserController extends BaseController{
         return new ResultInfo<>(pageObj.getRecords(), pageObj.getTotal());
     }
 
+    @SysLog("添加用户操作")
     @RequestMapping("/add")
     @RequiresPermissions("user:add")
     public @ResponseBody
@@ -79,6 +81,7 @@ public class UserController extends BaseController{
         return new ResultInfo<>(b);
     }
 
+    @SysLog("批量删除用户操作")
     @RequestMapping("/delBatch")
     @RequiresPermissions("user:del")
     public @ResponseBody
