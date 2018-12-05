@@ -87,7 +87,7 @@ public class ShiroRealm extends AuthorizingRealm {
         loginLog.setUserId(userInfo.getId());
         loginLog.setUserName(userInfo.getUserName());
         loginLog.setIpAddress(AddressUtils.INTERNET_IP);
-        loginLog.setGeographyLocation(AddressUtils.getAddressByIp(loginLog.getIpAddress()));
+        loginLog.setGeographyLocation("局域网测试");
         iloginLogService.insert(loginLog);
     }
 

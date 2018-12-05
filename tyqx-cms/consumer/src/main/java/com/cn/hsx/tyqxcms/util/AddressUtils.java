@@ -42,7 +42,7 @@ public class AddressUtils {
 			}
 			return returnStr;
 		}
-		return null;
+		return "局域网测试";
 	}
 	/**
 	 * @param urlStr
@@ -90,6 +90,7 @@ public class AddressUtils {
 	}
 
 	public static String getAddressByIp(String ipAddress){
+
 		String json_result = AddressUtils.getAddresses("ip=" + ipAddress, "utf-8");
 		JSONObject dataJson = JSONObject.parseObject(json_result).getJSONObject("data");
 		System.out.println("dataJson： " + dataJson);
